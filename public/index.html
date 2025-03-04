@@ -17,6 +17,7 @@
 				<div class="form-input" id="join-id">
 					
 				</div>
+                <!-- <button onclick="copyToClipboard()">Copy Text</button> -->
 			</div>
 		</div>
 
@@ -37,6 +38,14 @@
 		</div>
 
 	</div>
+    <script>
+        function copyToClipboard() {
+          const text = document.querySelector("#join-id")?.value;
+          navigator.clipboard.writeText(text)
+            .then(() => alert("Copied to Clipboard!"))
+            .catch(err => console.error("Failed to copy: ", err));
+        }
+      </script>
     <script src="socket.io/socket.io.js"></script>
     <script src="code.js"></script>
 </body>
