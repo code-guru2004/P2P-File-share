@@ -1,7 +1,7 @@
 
 (function(){
     let receiverID;
-    const socket = io();
+    const socket = io("/api/socket");
 
     function generateID(){
 		return `${Math.trunc(Math.random()*999)}-${Math.trunc(Math.random()*999)}-${Math.trunc(Math.random()*999)}`;
