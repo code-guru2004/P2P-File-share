@@ -29,4 +29,4 @@ io.on("connection", function(socket){
 	})
 });
 
-server.listen(`https://p2p-file-share-xi.vercel.app/`)
+server.listen(5000)
